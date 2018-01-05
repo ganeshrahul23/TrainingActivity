@@ -9,7 +9,7 @@ public class Client {
 		shp[2] = new Cylinder(23.4, 5.3);
 		
 		for(Shape s:shp){
-			s.display();
+			s.calcVolume();
 			System.out.println("--------------------------------------");
 		}
 

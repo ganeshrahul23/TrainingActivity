@@ -11,15 +11,12 @@ public class Cone implements Shape {
 	}
 
 	@Override
-	public double calcVolume() {
+	public void calcVolume() {
 		double result = Math.PI * radius * radius * height / 3;
-		return result;
-	}
-	
-	public void display(){
 		System.out.println("The Shape is Cone");
 		System.out.println("The radius is " + radius);
 		System.out.println("The Height is " + height);	
-		System.out.println("The Volume is " + calcVolume());
+		System.out.println("The Volume is " + result);
 	}
+	
 }

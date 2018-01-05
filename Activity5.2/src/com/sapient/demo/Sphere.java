@@ -9,14 +9,11 @@ public class Sphere implements Shape {
 	}
 
 	@Override
-	public double calcVolume() {
+	public void calcVolume() {
 		double result = (4/3) * Math.PI * radius * radius * radius;
-		return result;
-	}
-	
-	public void display(){
 		System.out.println("The Shape is Sphere");
 		System.out.println("The radius is " + radius);
-		System.out.println("The Volume is " + calcVolume());
+		System.out.println("The Volume is " + result);
 	}
+	
 }
